@@ -5,7 +5,7 @@ WORKDIR /app
 RUN apk update && apk upgrade
 #Update to latest version of npm
 RUN npm install -g npm@latest
-#COPY from/path/on/localmachine to/path/in/container
+#COPY from/path/on/host to/path/in/container
 COPY package.json .
 #Install all dependencies, including express, occurs at build time
 RUN npm install
