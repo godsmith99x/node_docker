@@ -18,6 +18,8 @@ CMD [ "node", "index.js" ]
 
 
 # run 'sudo docker build -t [imageName] .' to build the image
+#run 'sudo docker run -p 3000:3000  -d --name [containerName] [imageName]' to run the container.
+#-p connects port 3000 in host to port 3000 in container, -d runs container detached
 
 
 
