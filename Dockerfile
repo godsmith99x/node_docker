@@ -1,6 +1,6 @@
 FROM node:current-alpine
 #Set WORKDIR in container
-WORKDIR /app
+WORKDIR /usr/app
 #Update container packages
 RUN apk update && apk upgrade
 #Update to latest version of npm
